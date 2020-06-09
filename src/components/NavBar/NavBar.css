@@ -1,0 +1,9 @@
+.ak-logo {
+  height: 35px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+}
