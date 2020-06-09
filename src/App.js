@@ -7,8 +7,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 
 import NavBar from "./components/NavBar";
+import Main from "./components/Main";
 import Home from "./components/Home";
-import Blog from "./components/Blog";
+import Footer from "./components/Footer";
 
 import "./App.css";
 
@@ -49,16 +50,17 @@ const ScrollTop = (props) => {
 
 const App = (props) => {
   return (
-    <div>
+    <div className="app">
       <NavBar></NavBar>
       <Switch>
         <Route exact path="/" component={Home}>
           {Home}
         </Route>
-        <Route exact path="/" component={Blog}>
-          {Blog}
+        <Route exact path="/" component={Main}>
+          {Main}
         </Route>
       </Switch>
+      <Footer></Footer>
       <ScrollTop {...props}>
         <Fab color="primary" size="small" aria-label="Scroll back to top">
           <KeyboardArrowUpIcon />
